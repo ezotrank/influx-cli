@@ -405,14 +405,14 @@ func ui() {
 		case result == "":
 			fmt.Println("")
 		case result == "exit":
-			fmt.Println("\n")
+			fmt.Println("")
 			return
 		case result == "commands" || result == "help" || result == "?":
-			fmt.Println("\n")
+			fmt.Println("")
 			printHelp()
 		default:
 			cmd := strings.TrimSpace(result)
-			fmt.Println("\n")
+			fmt.Println("")
 			handle(cmd)
 		}
 
